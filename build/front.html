@@ -9,40 +9,65 @@
   body {
     font-family: "DejaVu Serif", serif;
     color: #141414;
-    padding: 28px 36px 24px 36px;
+    padding: 16px 24px 14px 24px;
   }
-  .frame { border: 3px solid #141414; height: 100%; padding: 0 30px 14px 30px; display: flex; flex-direction: column; }
+  .frame { border: 2px solid #141414; height: 100%; padding: 0 18px 8px 18px; display: flex; flex-direction: column; }
+  .kicker { font-family: "DejaVu Sans", sans-serif; font-weight: bold; letter-spacing: 3px; color: #b91c1c; }
   /* ---------- masthead ---------- */
-  .masthead { text-align: center; padding-top: 8px; }
-  .masthead h1 { font-size: 72px; line-height: 1; font-weight: bold; letter-spacing: 8px; }
+  .masthead { text-align: center; padding-top: 3px; }
+  .masthead h1 { font-size: 84px; line-height: 1; font-weight: bold; letter-spacing: 12px; }
   .dateline {
-    display: flex; align-items: center; gap: 14px;
-    margin-top: 8px; padding: 5px 0;
-    border-top: 2px solid #141414; border-bottom: 2px solid #141414;
-    font-family: "DejaVu Sans", sans-serif; font-size: 20px; font-weight: bold; letter-spacing: 3px;
+    display: flex; align-items: center; gap: 12px;
+    margin-top: 5px; padding: 3px 0;
+    border-top: 1px solid #141414; border-bottom: 3px solid #141414;
+    font-family: "DejaVu Sans", sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 3px;
   }
   .dateline .rule { flex: 1; height: 1px; background: #141414; }
-  /* ---------- lead story ---------- */
-  .lead { padding: 10px 0 8px 0; border-bottom: 3px solid #141414; }
-  .kicker { font-family: "DejaVu Sans", sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 3px; color: #b91c1c; }
-  .lead h2 { font-size: 40px; line-height: 1.08; font-weight: bold; margin: 6px 0 8px 0; letter-spacing: 0.5px; }
-  .deck { font-size: 19px; line-height: 1.35; color: #2b2b2b; }
-  /* ---------- stories grid ---------- */
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; padding: 8px 0 6px 0; }
-  .story { padding: 8px 0; border-bottom: 1px solid #9a958a; }
-  .story .kicker { font-size: 14px; }
-  .story h3 { font-size: 23px; line-height: 1.15; font-weight: bold; margin: 4px 0 5px 0; }
-  .story p { font-size: 14px; line-height: 1.3; color: #2b2b2b; }
-  .also-box { background: #ece5d3; padding: 8px 12px; border-bottom: 1px solid #9a958a; }
-  .also-box .kicker { font-size: 14px; }
-  .also-box ul { list-style: none; margin-top: 4px; }
-  .also-box li { font-family: "DejaVu Sans", sans-serif; font-size: 13px; line-height: 1.35; color: #2b2b2b; padding: 2px 0; }
-  .also-box li b { color: #141414; }
+  /* ---------- names banner ---------- */
+  .names {
+    text-align: center; font-size: 86px; line-height: 1.05; font-weight: bold;
+    letter-spacing: 0; padding-top: 3px; white-space: nowrap;
+    margin: 0 -18px;
+  }
+  /* ---------- summit deck ---------- */
+  .sdeck { padding: 4px 0 3px 0; }
+  .sdeck1 { font-size: 26px; line-height: 1.2; font-weight: bold; white-space: nowrap; }
+  .srule { border-top: 2px solid #141414; margin: 4px 0; }
+  .sdeck2 { font-size: 26px; line-height: 1.2; font-weight: bold; }
+  .bbc { font-family: "DejaVu Sans", sans-serif; font-size: 13px; font-style: italic; color: #333; margin-top: 5px; }
+  /* ---------- nuclear quote ---------- */
+  .quote { padding: 3px 0; }
+  .qrule { border-top: 2px solid #141414; }
+  .quote p { font-size: 40px; line-height: 1.15; font-weight: bold; text-align: center; padding: 5px 0 2px 0; }
+  .qattr { font-family: "DejaVu Sans", sans-serif; font-size: 12px; text-align: center; color: #333; padding-bottom: 3px; }
+  /* ---------- ICJ ---------- */
+  .icj { padding: 3px 0 2px 0; border-top: 3px solid #141414; }
+  .icj .kicker { font-size: 14px; }
+  .icj h2 { font-size: 56px; line-height: 1.05; font-weight: bold; margin: 3px 0 5px 0; }
+  .ideck { font-size: 17px; line-height: 1.35; color: #141414; }
+  /* ---------- ICC sidebar ---------- */
+  .icc {
+    background: #ece5d3; border: 2px solid #141414; padding: 5px 12px; margin-top: 4px;
+    font-size: 13px; line-height: 1.4; color: #141414;
+  }
+  .icc b { font-family: "DejaVu Sans", sans-serif; }
+  /* ---------- four-column row ---------- */
+  .row4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0 18px; padding: 4px 0 2px 0; }
+  .cell { padding: 5px 0; border-top: 1px solid #9a958a; }
+  .cell .kicker { font-size: 12px; }
+  .cell h3 { font-size: 19px; line-height: 1.15; font-weight: bold; margin: 3px 0 4px 0; }
+  .cell p { font-size: 11px; line-height: 1.45; color: #141414; font-weight: 500; }
+  /* ---------- also today ---------- */
+  .also { padding: 3px 0 2px 0; border-top: 1px solid #9a958a; }
+  .also .kicker { font-size: 12px; }
+  .also-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0 14px; margin-top: 2px; }
+  .also-row div { font-family: "DejaVu Sans", sans-serif; font-size: 11px; line-height: 1.4; color: #141414; }
+  .also-row b { color: #141414; }
   /* ---------- footer ---------- */
   .foot {
     display: flex; justify-content: space-between;
-    margin-top: auto; padding-top: 6px; border-top: 3px solid #141414;
-    font-family: "DejaVu Sans", sans-serif; font-size: 13px; letter-spacing: 2px; color: #555;
+    margin-top: auto; padding-top: 5px; border-top: 3px solid #141414;
+    font-family: "DejaVu Sans", sans-serif; font-size: 12px; letter-spacing: 2px; color: #555;
   }
 </style>
 </head>
@@ -53,46 +78,60 @@
     <div class="dateline"><span class="rule"></span><span>THURSDAY, 19 NOVEMBER 2026</span><span class="rule"></span></div>
   </div>
 
-  <div class="lead">
-    <div class="kicker">APEC &middot; SHENZHEN</div>
-    <h2>TRUMP, XI AND PUTIN HOLD FIRST THREE-WAY SUMMIT IN SHENZHEN</h2>
-    <div class="deck">First meeting of its kind: about 90 minutes behind closed doors at Kylin Villa, on the APEC sidelines. The four-point &ldquo;Declaration Towards Peace&rdquo; says a nuclear war cannot be won and opens talks on nuclear risks &mdash; but says nothing on Ukraine or Iran.</div>
+  <div class="names">TRUMP &middot; XI &middot; PUTIN</div>
+
+  <div class="sdeck">
+    <div class="sdeck1">First three-way summit in Shenzhen ends in a &ldquo;peace declaration&rdquo;</div>
+    <div class="srule"></div>
+    <div class="sdeck2">no deal on Ukraine or Iran</div>
+    <div class="bbc">BBC analysis: &ldquo;high on spectacle, short on substance&rdquo; &mdash; no Ukraine, no Iran, no timetable for the nuclear talks.</div>
   </div>
 
-  <div class="grid">
-    <div class="story">
-      <div class="kicker">THE HAGUE</div>
-      <h3>World court rules Myanmar committed genocide against the Rohingya</h3>
-      <p>By nine votes to six, the court held Myanmar responsible for the 2017 crackdown in northern Rakhine &mdash; the first time it has blamed a state for genocide. About 10,000 Rohingya were killed; it ordered investigations and the refugees&rsquo; safe return.</p>
-    </div>
-    <div class="story">
+  <div class="quote">
+    <div class="qrule"></div>
+    <p>&ldquo;NUCLEAR WAR CANNOT BE WON AND MUST NEVER BE FOUGHT&rdquo;</p>
+    <div class="qattr">&mdash; the &ldquo;Declaration Towards Peace&rdquo;, verbatim</div>
+    <div class="qrule"></div>
+  </div>
+
+  <div class="icj">
+    <div class="kicker">THE HAGUE</div>
+    <h2>MYANMAR COMMITTED<br>GENOCIDE</h2>
+    <p class="ideck">First such ruling against a state. Nine to six: the 2017 crackdown in northern Rakhine was carried out with intent to destroy the Rohingya; about 10,000 killed. The court ordered investigations and the refugees&rsquo; safe return.</p>
+  </div>
+
+  <div class="icc"><b>THE DECLARATION ALSO WARNS</b> the International Criminal Court and similar bodies that they &ldquo;must not abuse their jurisdiction&rdquo; &mdash; the same week a court ruled a state guilty of genocide.</div>
+
+  <div class="row4">
+    <div class="cell">
       <div class="kicker">WASHINGTON</div>
       <h3>Senate rejects Iran war-powers resolution, 51&ndash;48</h3>
-      <p>The Senate voted down H.Con.Res. 93, which would have directed President Trump to end hostilities with Iran. Three Republicans backed it; one Democrat voted against. It was the first Iran vote since the midterm elections.</p>
+      <p>The Senate voted down H.Con.Res. 93, which would have directed President Trump to end hostilities with Iran. Three Republicans backed it; one Democrat against.</p>
     </div>
-    <div class="story">
+    <div class="cell">
       <div class="kicker">GAZA</div>
-      <h3>Israel ends first ground raid beyond Gaza ceasefire line</h3>
-      <p>Tanks crossed the Yellow Line near Bureij and Nuseirat in the first ground raid into Hamas-held territory since the October 2025 ceasefire. The operation ended on Thursday and the Salah al-Din road reopened.</p>
+      <h3>Israel ends first raid beyond Gaza ceasefire line</h3>
+      <p>Tanks crossed the Yellow Line near Bureij and Nuseirat, the first ground raid into Hamas-held territory since the October 2025 ceasefire.</p>
     </div>
-    <div class="story">
+    <div class="cell">
       <div class="kicker">UKRAINE</div>
       <h3>Ukraine hits Crimean Bridge for third time this week</h3>
-      <p>Neptune missiles struck the railway section of the 19-kilometre bridge, halting train traffic two days after a strike brought down 227 metres of roadway. Russia hit back overnight: at least five killed and power cut in five regions.</p>
+      <p>Neptune missiles hit the railway section, halting trains two days after a strike brought down 227 metres of roadway. Russia hit back: five killed, power cut in five regions.</p>
     </div>
-    <div class="story">
+    <div class="cell">
       <div class="kicker">RIYADH</div>
       <h3>Houthi missile damages Riyadh&rsquo;s tallest tower</h3>
-      <p>A missile struck the PIF Tower, headquarters of the sovereign wealth fund, blowing out windows across seven floors. No injuries were reported. It was the second strike on the financial district in 11 days.</p>
+      <p>A missile struck the PIF Tower, headquarters of the sovereign wealth fund, blowing out windows across seven floors. No injuries were reported.</p>
     </div>
-    <div class="also-box">
-      <div class="kicker">ALSO TODAY</div>
-      <ul>
-        <li><b>IAEA:</b> North Korea has built an extension to its Yongbyon enrichment plant, Grossi tells the board.</li>
-        <li><b>Denmark&rsquo;s parliament</b> approves the Greenland security deal, 109&ndash;0, clearing the way for more US bases.</li>
-        <li><b>Anthropic</b> begins trading on Nasdaq as ANT after pricing the largest IPO on record &mdash; $81.3 billion at $83 a share.</li>
-        <li><b>Bangladesh:</b> four killed in violence as the Awami League&rsquo;s lockdown takes hold; Yunus&rsquo;s ancestral home torched.</li>
-      </ul>
+  </div>
+
+  <div class="also">
+    <div class="kicker">ALSO TODAY</div>
+    <div class="also-row">
+      <div><b>IAEA:</b> North Korea has built an extension to its Yongbyon enrichment plant, Grossi tells the board.</div>
+      <div><b>Denmark:</b> parliament approves the Greenland deal, 109&ndash;0, clearing the way for more US bases.</div>
+      <div><b>Anthropic</b> debuts as ANT after the largest IPO on record &mdash; $81.3 billion at $83 a share.</div>
+      <div><b>Bangladesh:</b> four killed in lockdown violence; Yunus&rsquo;s ancestral home torched.</div>
     </div>
   </div>
 

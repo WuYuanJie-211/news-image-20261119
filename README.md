@@ -14,8 +14,12 @@ told in words on the page itself.
 - **Lead:** Trump, Xi and Putin hold their first three-way summit in
   Shenzhen — about 90 minutes behind closed doors at Kylin Villa on
   the APEC sidelines — and issue a four-point "Declaration Towards
-  Peace": a nuclear war cannot be won, talks on nuclear risks, more
-  refined oil, UN reform. Nothing on Ukraine or Iran.
+  Peace": a nuclear war cannot be won, talks on nuclear risks, UN
+  reform, and a warning to the International Criminal Court not to
+  "abuse its jurisdiction". Nothing on Ukraine or Iran. The BBC calls
+  it "high on spectacle, short on substance". The declaration's own
+  line, verbatim: "Nuclear war cannot be won and must never be
+  fought."
 - **The Hague:** the World Court rules, 9–6, that Myanmar committed
   genocide against the Rohingya in the 2017 crackdown — the first time
   the court has blamed a state for genocide; about 10,000 killed.
